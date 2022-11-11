@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "learn-react-springboot",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cvpcorp.learn.springboot.Application",
+            "projectName": "learn-react-springboot",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "preLaunchTask": "" // "launch node server" 
+        }
+    ]
+}

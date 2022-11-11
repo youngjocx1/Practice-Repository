@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  database:
+    # Official Postgres image from DockerHub (we use the last version)
+    image: 'postgres:latest'
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: cvpuser # The PostgreSQL user (useful to connect to the database)
+      POSTGRES_PASSWORD: Lt73Y3L%zeAgVjLk # The PostgreSQL password (useful to connect to the database) -- Overridden by environment variables if defined
+      POSTGRES_DB: cvpspringboot # The PostgreSQL default database (automatically created at first launch)

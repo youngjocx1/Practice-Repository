@@ -1,0 +1,35 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: prep-database-environment
+    init: echo 'init database'
+    command: docker-compose up -d
+  - name: maven-build
+    init: echo 'get java dependencies'
+    command: mvn clean install
+  - name: front-end
+    init: echo 'starting react backend server'
+    command: bash start.sh
+  - name: nginix
+    init: echo 'start nginix'
+    command: nginx
+
+vscode:
+  extensions:
+    - ms-azuretools.vscode-docker
+    - redhat.java
+    - vscjava.vscode-java-debug
+    - vscjava.vscode-java-dependency
+    - vscjava.vscode-java-test
+    - vscjava.vscode-maven
+    - mblode.pretty-formatter
+    - mtxr.sqltools
+    - mtxr.sqltools-driver-pg
+    - pivotal.vscode-boot-dev-pack
+
+ports:
+  - name: Web App
+    description: The main application web server
+    port: 8080
+    onOpen: open-browser

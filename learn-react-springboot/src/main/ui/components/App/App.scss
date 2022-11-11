@@ -1,0 +1,143 @@
+/***** SETTINGS VARIABLES (values to be overriden before compiling scss) *****/
+@import "../App/uswds-settings";
+
+/***** MAIN SOURCE stylesheet *****/
+@import "~uswds/dist/scss/uswds";
+@import "../App/global-styles";
+@import "../App/react-datatable-component-override";
+
+// ----------------- HEADER ------------------
+
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  min-height: 100%;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  border-bottom: 1px solid $uscis-gray;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem; /* Footer height */
+}
+
+.usa-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  line-height: 35px;
+}
+
+.header-logo {
+  display: flex;
+  width: 220px;
+  margin-left: 40px;
+}
+
+.header-text {
+  width: 60%;
+  color: $uscis-dark-gray;
+  font-size: 20px;
+  font-family: $uscis-generic-font-family;
+}
+
+.sign-out {
+  width: 180px;
+}
+
+// ----------------- BODY ------------------
+
+// ----------------- SEARCH ------------------
+
+.search {
+  width: 25%;
+  padding: 10px;
+  border-right: 1px solid $uscis-gray;
+}
+
+.search h3 {
+  margin-left: 10px;
+  color: $uscis-darker-gray;
+  font-family: $uscis-generic-font-family;
+  font-size: 22px;
+}
+
+.search-box {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.usa-form-group {
+  margin-top: 6px;
+}
+
+.first-name {
+  margin-right: 10px;
+}
+
+.birthday-label {
+  margin-top: 5px;
+  padding: 0px;
+}
+
+.usa-fieldset {
+  align-items: center;
+}
+
+.usa-form-group {
+  margin: 10px;
+  padding: 0px;
+  min-width: 0;
+}
+
+.usa-memorable-date > .usa-form-group {
+  margin-top: 0px;
+}
+
+.state {
+  margin-right: 10px;
+}
+
+// ----------------- MAIN CARD ------------------
+
+.main-card {
+  padding: 20px;
+}
+
+.main-card h1 {
+  font-size: 42px;
+  color: $uscis-darker-gray;
+  font-family: $uscis-generic-font-family;
+}
+
+// ----------------- CARD DETAILS ------------------
+
+.card-details {
+  border: 1px solid $uscis-gray;
+}
+
+.usa-label {
+  white-space: nowrap;
+}
+
+.tag {
+  background-color: #00bde3;
+  color: black;
+  white-space: nowrap;
+  border-radius: 1px;
+  font-size: 1em;
+}

@@ -1,0 +1,15 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Local Host",
+            "database": "cvpspringboot",
+            "username": "cvpuser",
+            "password": "Lt73Y3L%zeAgVjLk"
+        }
+    ]
+}
